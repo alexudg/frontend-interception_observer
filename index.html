@@ -21,17 +21,12 @@
     <title>Intersection Observer</title>
 </head>
 <body>
-    <div class="box"></div> 
     <div class="box"></div>
     <div class="box"></div>
+    <video width="340px" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" id="video" muted></video>
     <div class="box"></div>
     <div class="box"></div>
-    <video width="340px" src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" id="video" muted></video>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+</body>
     <script>
         const $video = document.querySelector('#video');
         
@@ -60,5 +55,4 @@
         const observer = new IntersectionObserver(callback, options);
         observer.observe($video); // a quien observar
     </script>
-</body>
 </html>
